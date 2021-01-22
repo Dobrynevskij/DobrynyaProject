@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {background-color: #F0FFF0}
+		p {text-indent: 25px;}
+		.c {
+		display: inline-block;	
+		padding: 5 px 15 px;
+		text-decoration: none;
+		color: #000;
+		}
+		.c:hover {
+		box-shadow: 0 0 5px rgba(0,0,0,0.3):
+		background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+		color: #a00;
+		}
+		</style>
+		<title> Сорбенты </title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://im0-tub-ru.yandex.net/i?id=6515bb887c25e11f82f3d1c761a76162&n=13">
+	</head>
+	<body>
+	<header>
+		<a class="c" href="Новый2.html"><h1>На главную</h1></a>
+	</header>
+	<details>
+		<summary><h2 align="center">Хотите пройти тест на тему сорбенты?</h2></summary>
+	
+	<section class="main"> 
+<form name="quiz" action="javascript:check();" class="quizform">
+ <div class="quizsection">
+ <h2>К какому виду адсорбентов относятся цеолиты?</h2> 
+	<div class="answer"> 
+		<input name="q1" value="value1" id="value1" type="radio" 			checked="checked" /> 1. Непористые адсорбенты 
+	</div> 
+	<div class="answer">
+		 <input name="q1" value="value1" id="value2" type="radio" /> 			2. Однородно- макропористые адсорбенты
+	</div>
+	 <div class="answer"> 
+		<input name="q1" value="value2" id="value3" type="radio" /> 			3.Однородно-тонкопористые адсорбенты
+	</div> 	
+	<div class="answer"> 
+		<input name="q1" value="value1" id="value4" type="radio" /> 		4.Неоднородно-пористые 	
+</div> 
+<div class="quizsection"> 
+	<h2>К какому виду адсорбентов относится активированный уголь?</h2> 
+	<div class="answer"> 
+		<input name="q2" value="value2" id="value1" type="radio" 		checked="checked" /> 1.Углеродные 
+	</div> 
+	<div class="answer">
+		<input name="q2" value="value1" id="value2" type="radio" /> 		2.Кремнесодержащие 
+	</div> 
+	<div class="answer">
+		 <input name="q2" value="value1" id="value3" type="radio" /> 		3. Волокнистые
+	</div>
+	 <div class="answer">
+		 <input name="q2" value="value1" id="value4" type="radio" /> 		4. Комбинированные 	
+ </div> 
+<div class="quizsection"> 	
+<h2>Что такое энтеросорбенты?</h2> 
+	<div class="answer"> 
+		<input name="q3" value="value1" id="value1" type="radio" 		checked="checked" /> 1.высокодисперсные природные или искусственные материалы с большой удельной поверхностью, на которой происходит адсорбция веществ из соприкасающихся с ней газов или жидкостей. 
+	</div> 
+	<div class="answer"> 
+		<input name="q3" value="value2" id="value2" type="radio" /> 		2.лекарственные средства различной структуры, осуществляющие связывание экзо- и эндогенных веществ в ЖКТ путём адсорбции. 
+	</div> 
+	<div class="answer"> 
+		<input name="q3" value="value1" id="value3" type="radio" /> 		3.твердые тела или жидкости, избирательно поглощающие (сорбирующие) из окружающей среды газы, пары или растворённые вещества.
+	 </div>
+	 <div class="answer"> 
+		<input name="q3" value="value1" id="value4" type="radio" /> 		4.это группа препаратов, способных поглощать и удерживать частицы газообразных веществ	
+</div> 
+<input value="Ответить" type="submit" /> <input value="Сбросить варианты ответов" type="reset" /> 
+</form>
+ </section>
+ <script type="text/javascript">// <![CDATA[ 
+	var result; 
+	function check()
+ 	{
+ 	var question;
+	 var value1; 
+	var value2; 
+	
+	question = 1; 
+	value1 = 0; 
+	value2 = 0;
+
+	 result = ""; 
+	var choice; 
+	for (question = 1; question <= 3; question++) {
+		 var q = document.forms['quiz'].elements['q'+question]; 
+			for (var i = 0; i < q.length; i++) { 
+				if (q[i].checked) { 
+					choice = q[i].value;
+				 }
+			 } 
+			if (choice == "value1") { 
+				value1++; 
+			} 
+			if (choice == "value2") { 
+				value2++; 
+			}
+		 } 
+	if (value2 == 0) { 
+		 result = "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D0%B1%D0%B5%D0%BD%D1%82%D1%8B"; 
+	} 
+	else if (value2 == 1) {
+		 result = "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D0%B1%D0%B5%D0%BD%D1%82%D1%8B"; 
+	}
+	 else if (value2 == 2) {
+		  result = "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D0%B1%D0%B5%D0%BD%D1%82%D1%8B"; 
+	} 
+	else if (value2 == 3) { 
+		result = "https://im0-tub-ru.yandex.net/i?id=f87fd4ce96df9891c0afe4471f1dae14&n=13";
+	 } 
+	else { result = "404"; 
+	}  window.location = result ;
+	} 
+	// ]]></script> 
+
+	</details>
+
+
+<h2 align="center">Список препаратов</h2>
+
+<h3 align="center">Активированный уголь.</h3> 
+<img src="https://fb.ru/misc/i/gallery/46966/2489377.jpg"height="300">
+<p>Интересная особенность – намного лучше действует при измельчении в порошок. Принимается в виде водной взвеси. В этом случае впитывающая площадь поверхности увеличивается в несколько раз, что усиливает его эффект. Взрослым назначают 4-8 таблеток 3-4 раза в день. Принимать следует через час после еды, за 2 часа до или после приёма других лекарств, иначе действие последних сойдёт на нет. Нет смысла использовать при отравлении бензином, керосином, сильными кислотами и щелочами – он их не адсорбирует.</p>
+
+<h3 align="center">Энтеросгель.</h3>
+<img src="https://osp-sakhalin.ru/wp-content/uploads/variant-s-podslastitelem.jpg"height="300">
+ <p>Избирательно поглощает токсические вещества, не затрагивая при этом витамины и макроэлементы, находящиеся в ЖКТ, в отли чие от угля. Эффект отмечается уже через 1-2 часа после приёма внутрь. Разрешён новорождённым, беременным и кормящим женщинам. Помогает при отравлении, несварении, аллергии, при инфекционных болезнях кишечника. Выпускается в виде пасты, которую либо взбалтывают с водой и пьют, либо принимают ложками. Взрослым назначается по 15 г 3 раза в сутки.</p>
+<h3 align="center">Смекта.</h3> 
+<img src="https://cachizer2.2gis.com/market/a68c0b76-bd74-4df7-8143-23e0e4a04487.jpg?w=1088"height="300">
+<p>Также как и предыдущий препарат, избирательно адсорбирует на своей поверхности только молекулы определённого размера – токсины, аллергены и пр. Может поглощать вирусы и бактерии. Принимается не только при отравлениях, но и при изжоге, рвоте, болях в брюшной полости. Производится как в виде порошка, так и в виде готовой суспензии. Взрослые должны использовать 3 дозированных пакетика в день. Порошок разводится с водой или жидкой пищей. Средство разрешено для применения грудным детям, кормящим и женщинам в положении.</p>
+
+<h3 align="center">Фильтрум-СТИ. </h3>
+<img src="https://medpechen.ru/wp-content/uploads/2018/08/filtrum-sti-1024x768.jpg"height="300">
+<p>Внешне похож на активированный уголь, но обладает более сильным адсорбирующим эффектом. В отличие от него, принимают всего по 2-3 таблетки, для наилучшего действия измельчают в порошок. Применяется при отравлениях, аллергиях на лекарственные средства, в сочетании с другими препаратами для лечения сальмонеллёза и дизентерии. Длительный приём провоцирует замедленное всасывание и усвоение организмом кальция и витаминов.</p>
+
+<h3 align="center">Лактофильтрум.</h3> 
+<img src="https://fb.ru/misc/i/gallery/46486/3253247.jpg"height="300">
+</p>В таблетках содержится лигнин и лактулоза. Первый компонент имеется в предыдущем средстве. Второе вещество позволяет после «очистки» кишечника восстановить нормальную микрофлору, к тому же после его расщепления образуются некоторые органические кислоты, позволяющие подавлять рост колоний болезнетворных бактерий в ЖКТ. Принимается по 2-3 таблетки 3 раза в день. Может использоваться при отравлениях, после приёма антибиотиков, в сочетании с другими препаратами для лечения цирроза печени, синдрома раздражённого кишечника, аллергического дерматита.</p>
+<h3 align="center">Полисорб.</h3> 
+<img src="https://fragmed.ru/wp-content/uploads/2019/04/img-13847879682067-1.jpg"height="300">
+<p>Препарат с самой большой поглощающей поверхностью. Начинает действовать буквально через 5 минут после приёма. Широкое применение получил при отравлениях различного происхождения, аллергических реакциях, похмелье, и даже токсикозе. Не обладает избирательной адсорбцией, т.е. поглощает молекулы любого размера. Разрешён детям с первого года жизни, беременным и кормящим. Выпускается в виде порошка, его доза зависит от веса человека, обязательно разводится с жидкостью. Не было зарегистрировано случаев передозировки.</p>
+
+	</body>
+</html>
